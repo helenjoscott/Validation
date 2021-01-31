@@ -18,47 +18,6 @@ class ValidationTest {
         assertEquals("Username created!", Validation.checkUsernameValidity(beingTested));
     }
 
-    @Test
-    void shouldBeTrueWhenUsernameContainsMoreThanOneUpperCaseChar(){
-        String beingTested = "HelenScott";
-        assertTrue(ValidateUserNameForUpperCaseCompliance.doesUsernameContainInvalidUpperCase(beingTested));
-    }
-
-    @Test
-    void testUsernameSpecialChars(){
-        String beingTested = "helen!scott";
-        assertTrue(Validation.doesUsernameContainSpecialChars(beingTested));
-    }
-
-    @Test
-    void testUsernameSpecialCharsAndUpperCase(){
-        String beingTested = "Helen!scott";
-        assertTrue(Validation.doesUsernameContainCharsAndUpperCase(beingTested));
-    }
-
-    @Test
-    void testUsernameEmpty(){
-        String beingTested = "";
-        assertTrue(Validation.isUsernameEmpty(beingTested));
-    }
-
-    @Test
-    void testUsernameisNull(){
-        //String beingTested;
-        assertTrue(Validation.isUsernameNull(null));
-    }
-
-    @Test
-    void testUsernameisOnlySpecialChars(){
-        String beingTested = "@^$%*£$^£%*£&£$&£73";
-        assertTrue(Validation.doesUsernameContainSpecialChars(beingTested));
-    }
-
-    @Test
-    void testUsernameisOnlyUpperCase(){
-        String beingTested = "SFOHJ";
-        assertTrue(ValidateUserNameForUpperCaseCompliance.doesUsernameContainInvalidUpperCase(beingTested));
-    }
 
 
     // do only capital
